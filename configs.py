@@ -7,6 +7,7 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pickle as pkl
 # from ipywidgets import interact
 
 #--------evaluation de performance--------
@@ -290,7 +291,11 @@ def deployement():
 
         #chagement du modele
         def load_model():
-            data = joblib.load("datasets_bd/db/model_diabete.joblib")
+            # data = joblib.load("datasets_bd/db/model_diabete.joblib")
+            # return data
+            with open("datasets_bd/db/model_diabete.pkl","rb") as file:
+                 data = pkl.load(file)
+            file.close()
             return data
 
         model_diabete = load_model()
