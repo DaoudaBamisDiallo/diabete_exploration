@@ -18,7 +18,7 @@ st.markdown(("FFD est une application est conçcue pour détecter très rapideme
 def load_model():
     with open("datasets_bd/db/model_diabete.pkl","rb") as file:
         data = pkl.load(file)
-    file.close()
+    # file.close()
     return data
 
 model_diabete = load_model()
