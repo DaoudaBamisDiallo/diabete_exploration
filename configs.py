@@ -2,7 +2,7 @@
 # packages necessaires
 import streamlit as st
 import numpy as np
-import  joblib as joblib
+# import  joblib as joblib
 import pandas as pd
 
 import matplotlib.pyplot as plt
