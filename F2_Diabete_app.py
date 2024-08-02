@@ -2,7 +2,7 @@
 # packages necessaires 1=V.1
 import streamlit as st
 import numpy as np
-import pickle_secure as pkl
+import pickle as pkl
 import pandas as pd
 
 #-------------modelisation et deployement----------------------------
