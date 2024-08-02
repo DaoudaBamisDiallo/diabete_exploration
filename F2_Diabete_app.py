@@ -14,7 +14,7 @@ st.header("Réalisée par : Pro-Data_Consulting")
 st.markdown(("FFD est une application est conçcue pour détecter très rapidement le diabete chez les femmes"))
 
 #chagement du modele
-@st.cache_data(persist=True)
+# @st.cache_data(persist=True)
 def load_model():
     with open("datasets_bd/db/model_diabete.pkl","rb") as file:
         data = pkl.load(file)
