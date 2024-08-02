@@ -2,7 +2,8 @@
 # packages necessaires 1=V.1
 import streamlit as st
 import numpy as np
-import pickle as pkl
+# import pickle as pkl
+import joblib as pkl
 import pandas as pd
 
 #-------------modelisation et deployement----------------------------
@@ -16,8 +17,8 @@ st.markdown(("FFD est une application est conçcue pour détecter très rapideme
 #chagement du modele
 # @st.cache_data(persist=True)
 def load_model():
-    with open("datasets_bd/db/model_diabete.pkl","rb") as file:
-        data = pkl.load(file)
+    # with open("datasets_/bd/db/model_diabete.joblib","rb") as file:
+    data = pkl.load("datasets_bd/db/model_diabete.joblib")
     # file.close()
     return data
 
