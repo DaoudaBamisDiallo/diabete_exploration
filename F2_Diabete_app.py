@@ -1,5 +1,6 @@
 #-------------------package------------------
 # packages necessaires 1=V.1
+# def appli():
 import streamlit as st
 import numpy as np
 # import pickle as pkl
@@ -7,7 +8,7 @@ import joblib as pkl
 import pandas as pd
 
 #-------------modelisation et deployement----------------------------
-# def main():
+
 # description de l'application
 st.image("datasets_bd/images/presnation.webp")
 st.title("Welcome to Fast_Finding Diabete")
@@ -15,7 +16,7 @@ st.header("Réalisée par : Pro-Data_Consulting")
 st.markdown(("FFD est une application est conçcue pour détecter très rapidement le diabete chez les femmes"))
 
 #chagement du modele
-# @st.cache_data(persist=True)
+@st.cache_data(persist=True)
 def load_model():
     # with open("datasets_/bd/db/model_diabete.joblib","rb") as file:
     data = pkl.load("datasets_bd/db/model_diabete.joblib")
@@ -54,9 +55,9 @@ if st.button('Examiner le patient',type='secondary') :
         st.success("Non diabetique")
     else :
         st.error("Le résultat de l'examen inconnu merci de bien saisir les information ou de consulter le médecin pour plus de detail")
-# with col4 :
-#     url ="https://ettienyann-diabete-diabete-tr9slg.streamlit.app/"
-#     st.button("[Retour à analyse](%s)" % url,type="primary")
-# if __name__=='main':
-# #   main()
+    # with col4 :
+    #     url ="https://ettienyann-diabete-diabete-tr9slg.streamlit.app/"
+    #     st.button("[Retour à analyse](%s)" % url,type="primary")
+
+
         

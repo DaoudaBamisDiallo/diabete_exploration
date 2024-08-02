@@ -283,10 +283,8 @@ def AED(data):
         svm_modeling(model_svc())
         if st.sidebar.radio("Evaluer le modele",["Patienter","Evaluer"])=="Evaluer":
             evaluation_models(model_svc())
-            
 
-
-#-------------modelisation et deployement----------------------------
+# -------------modelisation et deployement----------------------------
 def deployement():
 
         #chagement du modele

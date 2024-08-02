@@ -3,7 +3,7 @@ from configs import presentation
 from configs import loading_dataset
 from configs import showing_data
 from configs import AED
-# from configs import appli
+from configs import appli
 
 
 def main():
@@ -17,8 +17,8 @@ def main():
     # ------------------------------analyse exploratoire des données-----------------------
     AED(data)
     
-    # # gener l'application
-    # appli()
+    # gener l'application
+    appli()
 
 if __name__=="__main__":
     main()
